@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+            width: 1080px;
+            height: 142px;
+            display: flex;
+            justify-content: space-evenly;
+            margin: 0 auto;
+        }
+
+        ul li{
+            height: 142px;
+            width: 33.33%   ;
+            display: flex;
+            align-items: center;
+        }
+        ul li:first-of-type{
+            justify-content: start;
+        }
+        ul li:nth-child(2){
+            justify-content: center;
+        }
+        ul li:last-child{
+            justify-content: flex-end;
+        }
+        li img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <ul class="warp">
+        <li>
+            <img src="icon-wechat.png" alt="">
+            <p>微信小程序<br>微信扫一扫，直接用车</p>
+        </li>
+        <li>
+            <img src="icon-rp.png" alt="">
+            <p>红包车<br>骑摩拜，能赚钱</p>
+        </li>
+        <li>
+            <img src="icon-credit.png" alt="">
+            <p>摩范分<br>文明骑行，信用生活</p>
+        </li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .warpper{
+        width: 700px;
+        height: 600px;
+        border: 1px solid green;
+        display: flex;
+    }
+    .warpper>div{
+        width: 300px;
+        height: 100px;
+    }
+    .warpper>div:first-child{
+        background: gray;
+        /* order: 5; */
+        flex-shrink: 10;
+        
+    }
+    .warpper>div:nth-child(2){
+        background: pink;
+        /* order: 3; */
+       
+    }
+    .warpper>div:last-child{
+        background: green;
+  
+    }
+    </style>
+</head>
+
+<body>
+    <div class="warpper">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+
+</html>

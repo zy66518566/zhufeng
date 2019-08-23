@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .griddle-box {
+            height: 300px;
+            width: 300px;
+            background: black;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: 0 auto;
+            border-radius: 10px;
+        }
+
+        .griddle-box>div {
+            display: flex;
+            background: white;
+            border-radius: 10px;
+            height: 110px;
+            width: 110px;
+            box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.178) inset;
+        }
+
+        .griddle-box div {
+            margin: 5px;
+        }
+
+        .griddle1 {
+            justify-content: center;
+            align-items: center
+        }
+
+        .griddle1>div {
+            height: 25px;
+            width: 25px;
+            background: black;
+            border-radius: 50%;
+        }
+
+        .griddle2 {
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .griddle2>div {
+            height: 25px;
+            width: 25px;
+            border-radius: 50%;
+            background: black;
+        }
+
+        .griddle2>div:last-child {
+            align-self: flex-end;
+        }
+
+        .griddle3 {
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .griddle3>div {
+            height: 25px;
+            width: 25px;
+            border-radius: 50%;
+            background: black;
+        }
+
+        .griddle3>div:nth-child(2) {
+            align-self: center;
+
+        }
+
+        .griddle3>div:nth-child(3) {
+            align-self: flex-end;
+        }
+
+        .griddle4 {
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: space-between;
+        }
+
+        .griddle4>div {
+            height: 25px;
+            width: 25px;
+            border-radius: 50%;
+            background: black;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="griddle-box">
+        <div class="griddle1">
+            <div></div>
+        </div>
+        <div class="griddle2">
+            <div></div>
+            <div></div>
+        </div>
+        <div class="griddle3">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="griddle4">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.min.css">
+    <script>
+            function refreshRem() {
+                // 设计稿的宽
+            var desW = 640,
+                winW = document.documentElement.clientWidth||document.body.clientWidth;
+                ratio = winW / desW;
+            document.documentElement.style.fontSize = ratio * 100 + 'px';
+        }
+        refreshRem();
+        window.addEventListener('resize', refreshRem);
+        </script>
+    <style>
+        html,
+        body {
+            font-size: 100px;
+        }
+
+        .main {
+            width: 6.4rem;
+            margin: 0 auto;
+            padding-bottom: 0.94rem;
+            padding-top: 1.2rem;
+        }
+
+        .title {
+            width: 100%;
+            height: 0.6rem;
+            background: rgb(32, 211, 32);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            left: 0;
+            top: 0;
+        }
+
+        .title li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .title li:first-child a {
+            border-radius: 50% 0 0 50%;
+        }
+
+        .title li:last-child a {
+            border-radius: 0 50% 50% 0;
+        }
+
+        .title a:hover {
+            opacity: 0.8;
+        }
+
+        .title a {
+            display: inline-block;
+            width: 0.8rem;
+            height: 0.4rem;
+            font-size: 0.16rem;
+            color: white;
+            font-weight: bold;
+            background: rgba(1, 12, 4, 0.212);
+            line-height: 0.4rem;
+            text-align: center;
+        }
+
+        .nav {
+            width: 100%;
+            height: 0.6rem;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            position: fixed;
+            left: 0;
+            top: 0.6rem;
+        }
+
+        .nav li {
+            width: 33.33%;
+            display: flex;
+        }
+
+        .nav a {
+            font-size: 0.16rem;
+            background: white;
+            width: 100%;
+            height: 0.6rem;
+            text-align: center;
+            line-height: 0.6rem;
+            color: black;
+            font-weight: bold;
+        }
+
+        .nav a:hover {
+            color: rgb(37, 224, 37);
+            font-weight: bolder;
+        }
+
+        .banner {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+        }
+
+        .banner li {
+            width: 49%;
+            height: 2.6rem;
+            display: flex;
+            justify-content: center;
+            border: 1px solid rgb(170, 170, 170);
+            box-sizing: border-box;
+            margin-bottom: 0.1rem;
+            padding-top: 0.1rem;
+        }
+
+        .banner li img {
+            width: 96%;
+            height: 86%;
+        }
+
+        .banner a {
+            font-size: 0.16rem;
+            text-align: center;
+        }
+
+        .footer {
+            width: 100%;
+            height: 1rem;
+            display: flex;
+            position: fixed;
+            left: 0;
+            bottom:0;
+            background: white;
+            border-top: 1px solid rgb(170, 170, 170);
+        }
+        .footer li {
+            width: 25%;
+            position: relative;
+        }   
+        .footer a {
+            font-size: 0.16rem;
+            color: black;
+            background: url("23.png") no-repeat center center;
+            background-size: 0.4rem;
+            display: block;
+            width: 100%;
+            height: 1rem;
+            text-align: center;
+            line-height: 1.6rem;
+        }
+
+        .footer li:nth-child(3) a {
+            background: url("123.png") no-repeat center center;
+            background-size: 1.8rem;
+            width:100%;
+            height: 1.26rem;
+            border: 1px solid black;
+            border-radius: 50%;
+            margin: 0 auto;
+            position: absolute;
+            bottom: 0.3rem;
+            box-shadow: 0px 0px 6px 4px black inset;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <ul class="title">
+            <li><a href="">热点</a></li>
+            <li><a href="">关注</a></li>
+        </ul>
+        <ul class="nav">
+            <li><a href="">足球现场</a></li>
+            <li><a href="">足球生活</a></li>
+            <li><a href="">足球美女</a></li>
+        </ul>
+        <ul class="banner">
+            <li><a href=""><img src="1.jpg" alt="">主子</a></li>
+            <li><a href=""><img src="1.jpg" alt="">主子</a></li>
+            <li><a href=""><img src="1.jpg" alt="">主子</a></li>
+            <li><a href=""><img src="1.jpg" alt="">主子</a></li>
+            <li><a href=""><img src="1.jpg" alt="">主子</a></li>
+            <li><a href=""><img src="1.jpg" alt="">主子</a></li>
+            <li><a href=""><img src="1.jpg" alt="">主子</a></li>
+            <li><a href=""><img src="1.jpg" alt="">主子</a></li>
+            <li><a href=""><img src="1.jpg" alt="">主子</a></li>
+            <li><a href=""><img src="1.jpg" alt="">主子</a></li>
+            <li><a href=""><img src="1.jpg" alt="">主子</a></li>
+            <li><a href=""><img src="1.jpg" alt="">主子</a></li>
+        </ul>
+        <ul class="footer">
+            <li><a href="">首页</a></li>
+            <li><a href="">首页</a></li>
+            <li><a href=""></a></li>
+            <li><a href="">首页</a></li>
+            <li><a href="">首页</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
